@@ -1,0 +1,51 @@
+/* Outlook.com / Hotmail */
+/* .ExternalClass Class Override */
+.ExternalClass{
+	width: 100%;
+	line-height: 100%;
+	
+	P,
+	SPAN,
+	FONT,
+	TD,
+	DIV {
+		line-height: 100%;
+		}
+	}
+
+/* <hX> Color Override */
+/*H2 {
+	color: #0066CC !important;
+	}*/
+
+
+/* Outlook 2007 / 2010 / 2013 */
+/* “Read in Browser” Link */
+#outlook A {
+	padding: 0;
+	}
+
+/* <table> Element Spacing */
+TABLE {
+	mso-table-lspace: 0pt;
+	mso-table-rspace: 0pt;
+	}
+
+/* Image Resizing */
+IMG {
+	-ms-interpolation-mode: bicubic;
+	}
+
+
+/* OSX / iOS */
+/* WebKit Text Size Adjustment */
+BODY {
+	-webkit-text-size-adjust: 100%;
+	}
+
+
+/* Windows Mobile */
+/* Windows Mobile Text Size Adjustment */
+BODY{
+	-ms-text-size-adjust: 100%;
+	}

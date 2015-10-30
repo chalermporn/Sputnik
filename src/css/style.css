@@ -1,0 +1,22 @@
+@import "utils/mixins";
+@import "utils/vars";
+@import "utils/fonts";
+
+/* global */
+IMG {
+	display: block;
+	border: none;
+	}
+
+/* page */
+#bodyTable {
+	@mixin wh 600px, 100%;
+	background: #fff;
+	}
+	#bodyCell {
+		
+		}
+		#templateContainer {
+			width: 600px;
+			border: 1px solid #e7e7e7;
+			}

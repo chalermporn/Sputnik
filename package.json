@@ -1,0 +1,43 @@
+{
+  "name": "Sputnik",
+  "version": "0.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "del": "~1.2.0",
+    "gulp": "~3.9.0",
+    "gulp-inline-css": "^3.0.0",
+    "gulp-jade": "~1.1.0",
+    "gulp-plumber": "~1.0.0",
+    "gulp-postcss": "~6.0.0",
+    "require-dir": "~0.3.0",
+    "run-sequence": "~1.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "~2.9.0",
+    "cssnano": "~3.3.0",
+    "postcss-property-lookup": "~1.1.0",
+    "precss": "~1.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dontuncleme/Sputnik.git"
+  },
+  "keywords": [
+    "template",
+    "mail",
+    "css",
+    "postcss",
+    "jade",
+    "gulp"
+  ],
+  "author": "Sergey Samsonov (dontuncleme@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dontuncleme/Sputnik/issues"
+  },
+  "homepage": "https://github.com/dontuncleme/Sputnik"
+}
