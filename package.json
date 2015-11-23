@@ -1,7 +1,7 @@
 {
   "name": "Sputnik",
   "version": "0.0.0",
-  "description": "Email template based on PostCSS, Jade and Gulp",
+  "description": "Email template based on PostCSS, PostHTML, Jade and Gulp",
   "main": "gulpfile.js",
   "dependencies": {
     "del": "~1.2.0",

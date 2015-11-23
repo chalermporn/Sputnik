@@ -12,7 +12,7 @@ var config = require('../config').jade,
 // PostHTML & plugins
 var posthtml = require('gulp-posthtml'),
 	doctype = require('posthtml-doctype'),
-	attr = require('posthtml-extend-attrs')
+	attr = require('posthtml-extend-attrs');
 
 gulp.task('jade', function () {
 	var plugins = [
