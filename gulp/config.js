@@ -6,22 +6,18 @@ var staticPath = 'dist/assets',
 
 module.exports = {	
 	images: {
-		src: './src/images/**/*',
+		src: path.join(__dirname, '../src/images/**/*'),
 		dest: imagesPath
 	},
 
 	css: {
-		src: ['./src/css/style.css', './src/css/includes/*.css'],
+		src: [path.join(__dirname, '../src/css/style.css'), path.join(__dirname, '../src/css/includes/*.css')],
 		dest: cssPath
 	},
 
 	jade: {
-		src: './src/*.jade',
-		dest: 'dist'
-	},
-
-	inline: {
-		src: './dist/*.html',
+		src: path.join(__dirname, '../src/*.jade'),
+		data: path.join(__dirname, '../src/tpl/data/'),
 		dest: 'dist'
 	}
 };

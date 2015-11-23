@@ -2,27 +2,35 @@
 html(lang="en")
 	head
 		meta(charset="UTF-8")
-		title Project title
+		title= title
 		style
 			include ../dist/assets/css/index-page.css
 	body.index-page
 
 		.index
 			
-			h1.index__title Project title
+			h1.index__title= title
 			ul.index__list
-				li
-					i 01.
-					a(href="01-first-mail.html") First mail
-				li
-					i 02.
-					span Second mail
+				each block in index
+					li
+						if block.number
+							i #{block.number}
+						if block.href
+							a(href="#{block.href}") #{block.title}
+						else
+							span #{block.title}
+			
+			each block in side
+				.index__side
+					.index__desc
+						p #{block.desctiption}
 
-			.index__side
-				.index__desc
-					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae doloremque dolorem illum, culpa cupiditate quia earum iure voluptate. Sequi, rerum, dolorum. Reiciendis voluptas esse nobis voluptates vero non incidunt, illo!
-				ul.index__links
-					li
-						a(href="#") GitHub Page
-					li
-						a(href="#") Download
+					if block.links
+						ul.index__links
+							each link in block.links
+								if link.github
+									li
+										a(href="#{link.github}") GitHub Page
+								if link.download
+									li
+										a(href="#{link.download}") Download

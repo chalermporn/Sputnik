@@ -11,14 +11,14 @@ var postcss = require('gulp-postcss'),
 	propertyLookup = require('postcss-property-lookup');
 
 gulp.task('css', function () {
-	var processors = [
+	var plugins = [
 		precss,
 		propertyLookup
 	];
 
 	return gulp.src(config.src)
 		.pipe(plumber())
-		.pipe(postcss(processors))
+		.pipe(postcss(plugins))
 		.pipe(
 			postcss([
 				cssnano({ discardComments: {removeAll: true} })

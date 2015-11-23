@@ -1,0 +1,25 @@
+{
+	"title": "Project title",
+	"side": [
+		{
+			"desctiption": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae doloremque dolorem illum, culpa cupiditate quia earum iure voluptate. Sequi, rerum, dolorum. Reiciendis voluptas esse nobis voluptates vero non incidunt, illo!",
+			"links": [
+				{
+					"github": "#",
+					"download": "#"
+				}
+			]
+		}
+	],
+	"index": [
+		{
+			"number": "01",
+			"title": "First mail",
+			"href": "01-first-mail.html"
+		},
+		{
+			"number": "02",
+			"title": "Second mail"
+		}
+	]
+}
