@@ -7,12 +7,14 @@ var config = require('../config').css,
 // PostCSS & plugins
 var postcss = require('gulp-postcss'),
 	cssnano = require('cssnano'),
+	size = require('postcss-size'),
 	precss = require('precss'),
 	propertyLookup = require('postcss-property-lookup');
 
 gulp.task('css', function () {
 	var plugins = [
 		precss,
+		size,
 		propertyLookup
 	];
 

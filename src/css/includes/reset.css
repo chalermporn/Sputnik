@@ -13,7 +13,7 @@ TD {
 	border-collapse: collapse;
 	}
 #bodyTable {
-	@mixin wh 100% !important, 100% !important;
+	size: 100% !important;
 	margin: 0;
 	padding: 0;
 	}

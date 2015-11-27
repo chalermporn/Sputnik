@@ -18,6 +18,7 @@ npm i
 
 - [cssnano](https://github.com/ben-eb/cssnano)
 - [postcss-property-lookup](https://github.com/simonsmith/postcss-property-lookup)
+- [postcss-size](https://github.com/postcss/postcss-size)
 - [precss](https://github.com/jonathantneal/precss)
 
 ### Used PostHTML plugins

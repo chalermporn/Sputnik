@@ -10,7 +10,7 @@ IMG {
 
 /* page */
 #bodyTable {
-	@mixin wh 600px, 100%;
+	size: 600px, 100%;
 	background: #fff;
 	}
 	#bodyCell {
