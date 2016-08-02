@@ -1,31 +1,31 @@
 var config = require('../config').css,
-	gulp = require('gulp'),
-	browserSync = require('browser-sync'),
-	reload = browserSync.reload,
-	plumber = require('gulp-plumber');
+    browserSync = require('browser-sync'),
+    gulp = require('gulp'),
+    plumber = require('gulp-plumber'),
+    reload = browserSync.reload;
 
 // PostCSS & plugins
-var postcss = require('gulp-postcss'),
-	cssnano = require('cssnano'),
-	size = require('postcss-size'),
-	precss = require('precss'),
-	propertyLookup = require('postcss-property-lookup');
+var cssnano = require('cssnano'),
+    precss = require('precss'),
+    propertyLookup = require('postcss-property-lookup'),
+    size = require('postcss-size'),
+    postcss = require('gulp-postcss');
 
 gulp.task('css', function () {
-	var plugins = [
-		precss,
-		size,
-		propertyLookup
-	];
+    var plugins = [
+        precss,
+        propertyLookup,
+        size
+    ];
 
-	return gulp.src(config.src)
-		.pipe(plumber())
-		.pipe(postcss(plugins))
-		.pipe(
-			postcss([
-				cssnano({ discardComments: {removeAll: true} })
-			]
-		))
-		.pipe(gulp.dest(config.dest))
-		.pipe(reload({ stream: true }));
+    return gulp.src(config.src)
+        .pipe(plumber())
+        .pipe(postcss(plugins))
+        .pipe(
+            postcss([
+                cssnano({ discardComments: {removeAll: true} })
+            ]
+        ))
+        .pipe(gulp.dest(config.dest))
+        .pipe(reload({ stream: true }));
 });

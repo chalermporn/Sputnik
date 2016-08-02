@@ -1,9 +1,9 @@
 @media only screen and (max-device-width: 767px) {
-	
+
 	/* page */
 	#bodyTable,
 	#templateContainer {
 		width: 640px !important;
 		}
-	
+
 	}

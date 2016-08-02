@@ -4,19 +4,19 @@ var staticPath = 'dist/assets',
 	cssPath = staticPath + '/css',
 	imagesPath = staticPath + '/images'
 
-module.exports = {	
+module.exports = {
 	images: {
 		src: path.join(__dirname, '../src/images/**/*'),
 		dest: imagesPath
 	},
 
 	css: {
-		src: [path.join(__dirname, '../src/css/style.css'), path.join(__dirname, '../src/css/includes/*.css')],
+		src: [path.join(__dirname, '../src/css/*.css'), path.join(__dirname, '../src/css/includes/*.css')],
 		dest: cssPath
 	},
 
-	jade: {
-		src: path.join(__dirname, '../src/*.jade'),
+	pug: {
+		src: path.join(__dirname, '../src/*.pug'),
 		data: path.join(__dirname, '../src/tpl/data/'),
 		dest: 'dist'
 	}

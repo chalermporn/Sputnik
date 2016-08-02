@@ -13,12 +13,6 @@
 		}
 	}
 
-/* <hX> Color Override */
-/*H2 {
-	color: #0066CC !important;
-	}*/
-
-
 /* Outlook 2007 / 2010 / 2013 */
 /* “Read in Browser” Link */
 #outlook A {
@@ -36,13 +30,11 @@ IMG {
 	-ms-interpolation-mode: bicubic;
 	}
 
-
 /* OSX / iOS */
 /* WebKit Text Size Adjustment */
 BODY {
 	-webkit-text-size-adjust: 100%;
 	}
-
 
 /* Windows Mobile */
 /* Windows Mobile Text Size Adjustment */

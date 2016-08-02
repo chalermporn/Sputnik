@@ -1,11 +1,17 @@
-extends tpl/_master.layout.jade
+extends tpl/_master.layout.pug
+
+block link
+	link(rel="stylesheet", href="../dist/assets/css/style.css")
+
+block title 
+	title Email title
 
 block content
 	center
 		table#bodyTable(align="center", border="0")
 			tr
 				td#bodyCell(align="center", valign="top")
-					table#templateContainer(border="0")
+					table#templateContainer(align="center", border="0")
 						tr
 							td(valign="top")
 								table(border="0", align="center")
@@ -13,5 +19,4 @@ block content
 										td(valign="top")
 										td(valign="top")
 										td(valign="top")
-								each mobile_link in mobile
-									a.mobile_link(href="#{mobile_link.href}") #{mobile_link.number}
+											a.mobile_link(href="#tel:1-800-555-5555") 123-456-7890

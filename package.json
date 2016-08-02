@@ -1,31 +1,27 @@
 {
   "name": "Sputnik",
   "version": "0.0.0",
-  "description": "Email template based on PostCSS, PostHTML, Jade and Gulp",
+  "description": "Email template based on PostCSS, PostHTML, Pug (Jade) and Gulp",
   "main": "gulpfile.js",
   "dependencies": {
-    "del": "~1.2.0",
-    "gulp": "~3.9.0",
-    "gulp-data": "~1.2.0",
-    "gulp-inline-css": "~3.0.0",
-    "gulp-jade": "~1.1.0",
-    "gulp-plumber": "~1.0.0",
-    "gulp-postcss": "~6.0.0",
-    "gulp-posthtml": "~1.5.0",
+    "del": "^1.2.1",
+    "gulp": "^3.9.1",
+    "gulp-inline-css": "^3.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.3.0",
+    "gulp-posthtml": "^2.0.0",
+    "gulp-pug": "^3.2.0",
     "require-dir": "~0.3.0",
-    "run-sequence": "~1.1.0"
+    "run-sequence": "^1.2.2"
   },
   "devDependencies": {
-    "browser-sync": "~2.10.0",
-    "cssnano": "~3.3.0",
-    "postcss-property-lookup": "~1.1.0",
-    "postcss-size": "~1.0.0",
+    "browser-sync": "^2.18.6",
+    "cssnano": "^3.10.0",
+    "postcss-property-lookup": "^1.2.1",
+    "postcss-size": "^1.1.1",
     "posthtml-doctype": "~1.1.0",
-    "posthtml-extend-attrs": "git+https://github.com/theprotein/posthtml-extend-attrs.git",
-    "precss": "~1.3.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "posthtml-extend-attrs": "^1.0.0",
+    "precss": "^1.4.0"
   },
   "repository": {
     "type": "git",
@@ -37,6 +33,7 @@
     "css",
     "postcss",
     "jade",
+    "pug",
     "gulp"
   ],
   "author": "Sergey Samsonov (dontuncleme@gmail.com)",

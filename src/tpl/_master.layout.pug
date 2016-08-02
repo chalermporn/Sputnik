@@ -1,27 +1,22 @@
 <!DOCTYPE html>
-html(xmlns="http://www.w3.org/1999/xhtml", xml:lang="en")
+html(lang="en")
+
 	head
 		meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
 		meta(name="format-detection" content="telephone=no")
 		meta(name="viewport" content="width=device-width")
-		style
-			//- Reset Styles
+		style(type="text/css")
+			//- reset styles
 			include ../../dist/assets/css/reset.css
-			
-			//- lient-specific CSS Styles
+
+			//- lient-specific CSS styles
 			include ../../dist/assets/css/client-specific.css
-			
-			//- Media Queries
+
+			//- media queries
 			include ../../dist/assets/css/media-queries.css
 
-		link(rel="stylesheet", href="../dist/assets/css/style.css")
+		block link
+		block title
 
-		<!--[if gte mso 9]>
-		style
-			//- Outlook Conditional CSS
-			include ../../dist/assets/css/outlook.css 
-		<![endif]-->
-		
-		title Email Title
 	body
 		block content
