@@ -1,0 +1,20 @@
+//- mixins
+//- section
+mixin section(mod, width, gap)
+    - width = width || 600
+
+    <!--#{mod}:start-->
+
+    tr
+        td.mail__section(align="center")
+
+            +if-ie("(gte mso 9)|(IE)") <center><table><tr><td width="#{width}" border="0" cellspacing="0" cellpadding="0">
+
+            table.content
+                tr
+                    td(class=mod + "-wrap")
+                        block
+
+            +if-ie("(gte mso 9)|(IE)") </td></tr></table></center>
+
+    <!--#{mod}:end-->

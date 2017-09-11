@@ -1,0 +1,25 @@
+/* wrap */
+.head-wrap {
+
+    }
+
+/* head */
+.head {
+    &__logo {
+        padding: 12px 0;
+
+        &__img {
+            size: 200px 40px;
+            }
+        }
+    &__push {
+        width: 100%;
+        }
+    &__logo-side {
+        padding: 12px 0;
+
+        &__img {
+            size: 40px;
+            }
+        }
+    }

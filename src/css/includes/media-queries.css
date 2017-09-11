@@ -1,9 +1,9 @@
-@media only screen and (max-device-width: 767px) {
+@import "../utils/config";
 
-	/* page */
-	#bodyTable,
-	#templateContainer {
-		width: 640px !important;
-		}
+@media (max-width: 600px) {
 
-	}
+    }
+
+@media screen and (min-width: 600px) {
+
+    }

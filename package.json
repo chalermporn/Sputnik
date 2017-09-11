@@ -21,6 +21,7 @@
     "postcss-size": "^1.1.1",
     "posthtml-doctype": "~1.1.0",
     "posthtml-extend-attrs": "^1.0.0",
+    "posthtml-render": "^1.0.6",
     "precss": "^1.4.0"
   },
   "repository": {

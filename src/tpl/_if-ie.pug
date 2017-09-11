@@ -1,0 +1,12 @@
+mixin if-ie(condition, showInNonIEBrowser)
+    - if(showInNonIEBrowser == null) showInNonIEBrowser = condition;
+
+    != "<!--[if " + condition + "]>"
+
+    if showInNonIEBrowser
+
+    block
+
+    if showInNonIEBrowser
+
+    != "<![endif]-->"

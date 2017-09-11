@@ -1,0 +1,8 @@
+/* sign */
+.sign {
+    @extend arial;
+    font-size: 15px;
+    line-height: 20px;
+    font-style: italic;
+    color: #858585;
+    }

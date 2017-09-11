@@ -1,0 +1,10 @@
+/* mail */
+.mail {
+    background: $glob--bg;
+    line-height: normal;
+
+    &__section {
+        background: $glob--bg;
+        padding: 0 10px;
+        }
+    }

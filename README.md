@@ -1,6 +1,6 @@
 # 🛰 Sputnik
 
-Sputnik is Email template based on [PostCSS](https://github.com/postcss/postcss), [PostHTML](https://github.com/posthtml/posthtml), [Pug (Jade)](http://jade-lang.com) and [Gulp](http://gulpjs.com). 
+Sputnik is Email template based on [PostCSS](https://github.com/postcss/postcss), [PostHTML](https://github.com/posthtml/posthtml), [Pug (Jade)](http://jade-lang.com) and [Gulp](http://gulpjs.com).
 
 ## Installation
 

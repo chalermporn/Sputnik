@@ -1,0 +1,39 @@
+extends tpl/_master.layout.pug
+include tpl/_if-ie.pug
+include tpl/_section.pug
+
+block link
+    link(rel="stylesheet", href="../dist/assets/css/style.css")
+
+block title
+    title Email title
+
+block body
+    table.mail
+        tbody
+
+            //- head
+            +section("head")
+                include tpl/blocks/_head.pug
+
+            //- body
+            +section("body")
+                include tpl/blocks/_body.pug
+
+                +body(
+                    true,
+                    true,
+                    "Hello %user_name%",
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam amet repellat, reprehenderit ut omnis natus ab fugit laudantium corporis, incidunt! Illum facilis perspiciatis eaque placeat non provident asperiores minima consequuntur.",
+                    "Visit you profile"
+                    )
+
+                    //- inner
+                    table.inner
+                        tr
+                            td.inner__section
+                                img.inner__img(src="http://via.placeholder.com/840x500", alt="")
+
+            //- footer
+            +section("footer")
+                include tpl/blocks/_footer.pug

@@ -1,0 +1,45 @@
+//- mixins
+//- body
+mixin body(top, bottom, title, desc, button)
+    table.body
+
+        if top
+
+            +body-top(title, desc, button)
+
+        tr
+            td.body__section
+                block
+
+        if bottom
+
+            +body-bottom(button)
+
+//- body-top
+mixin body-top(title, desc, button)
+    tr
+        td.body__title
+            p.title!=title
+    tr
+        td.body__desc
+            p.desc!=desc
+    tr
+        td.body__ctrl.body__ctrl_top
+            +if-ie("mso") <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" target="_blank" style="height: 40px; v-text-anchor: middle; width: 200px;" arcsize="179%" stroke="f" fillcolor="#07c"><w:anchorlock/><center>
+
+            <a class="button button_body-top" href="#" target="_blank" style="background-color: #07c; border-radius: 100px; color: #fff; display: inline-block; font-family: sans-serif; font-size: 15px; line-height: 40px; text-align: center; text-decoration: none; width: 200px; -webkit-text-size-adjust: none;">#{button}</a>
+
+            +if-ie("mso") </center></v:roundrect>
+
+//- body-bottom
+mixin body-bottom(button)
+    tr
+        td.body__ctrl.body__ctrl_bottom
+            +if-ie("mso") <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" target="_blank" style="height: 56px; v-text-anchor: middle; width: 280px;" arcsize="179%" stroke="f" fillcolor="#07c"><w:anchorlock/><center>
+
+            <a class="button button_body-bottom" href="#" target="_blank" style="background-color: #07c; border-radius: 100px; color: #fff; display: inline-block; font-family: sans-serif; font-size: 20px; line-height: 56px; text-align: center; text-decoration: none; width: 280px; -webkit-text-size-adjust: none;">#{button}</a>
+
+            +if-ie("mso") </center></v:roundrect>
+    tr
+        td.body__sign
+            p.sign Cheers!

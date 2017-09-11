@@ -1,23 +1,25 @@
 var path = require('path');
 
 var staticPath = 'dist/assets',
-	cssPath = staticPath + '/css',
-	imagesPath = staticPath + '/images'
+    cssPath = staticPath + '/css',
+    imagesPath = staticPath + '/images'
 
 module.exports = {
-	images: {
-		src: path.join(__dirname, '../src/images/**/*'),
-		dest: imagesPath
-	},
+    images: {
+        src: path.join(__dirname, '../src/images/**/*'),
+        dest: imagesPath
+    },
 
-	css: {
-		src: [path.join(__dirname, '../src/css/*.css'), path.join(__dirname, '../src/css/includes/*.css')],
-		dest: cssPath
-	},
+    css: {
+        src: [
+            path.join(__dirname, '../src/css/*.css'),
+            path.join(__dirname, '../src/css/includes/**/*.css')
+        ],
+        dest: cssPath
+    },
 
-	pug: {
-		src: path.join(__dirname, '../src/*.pug'),
-		data: path.join(__dirname, '../src/tpl/data/'),
-		dest: 'dist'
-	}
+    pug: {
+        src: path.join(__dirname, '../src/*.pug'),
+        dest: 'dist'
+    }
 };

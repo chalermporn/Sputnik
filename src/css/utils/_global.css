@@ -1,0 +1,17 @@
+/* global */
+BODY {
+    background: $glob--bg;
+    }
+IMG {
+    display: block;
+    border: none;
+    }
+P {
+    margin: 0;
+    }
+TABLE {
+    width: 100%;
+    }
+    TD {
+        vertical-align: top;
+        }

@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 html(lang="en")
 
-	head
-		meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
-		meta(name="format-detection" content="telephone=no")
-		meta(name="viewport" content="width=device-width")
-		style(type="text/css")
-			//- reset styles
-			include ../../dist/assets/css/reset.css
+    head
+        meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+        meta(name="format-detection" content="telephone=no")
+        meta(name="viewport" content="width=device-width")
+        style(type="text/css")
 
-			//- lient-specific CSS styles
-			include ../../dist/assets/css/client-specific.css
+            //- reset styles
+            include ./../../dist/assets/css/reset.css
 
-			//- media queries
-			include ../../dist/assets/css/media-queries.css
+            //- lient-specific CSS styles
+            include ./../../dist/assets/css/client-specific.css
 
-		block link
-		block title
+            //- media queries
+            include ./../../dist/assets/css/media-queries.css
 
-	body
-		block content
+        block link
+        block title
+
+    body
+        block body

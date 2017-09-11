@@ -26,6 +26,5 @@ gulp.task('css', function () {
                 cssnano({ discardComments: {removeAll: true} })
             ]
         ))
-        .pipe(gulp.dest(config.dest))
-        .pipe(reload({ stream: true }));
+        .pipe(gulp.dest(config.dest));
 });

@@ -1,19 +1,14 @@
 BODY {
-	margin: 0;
-	padding: 0;
-	}
+    margin: 0;
+    padding: 0;
+    }
 IMG {
-	height: auto;
-	line-height: 100%;
-	outline: none;
-	text-decoration: none;
-	}
+    height: auto;
+    line-height: 100%;
+    outline: none;
+    text-decoration: none;
+    }
 TABLE,
 TD {
-	border-collapse: collapse;
-	}
-#bodyTable {
-	size: 100% !important;
-	margin: 0;
-	padding: 0;
-	}
+    border-collapse: collapse;
+    }

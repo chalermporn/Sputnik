@@ -1,0 +1,53 @@
+//- mixins
+//- social-item
+mixin social-item(src, alt, href)
+    td.footer__social__item
+        a.footer__social__link(href=href, target="_blank")
+            img.footer__social__img(src=src, alt=alt)
+
+//- footer
+table.footer
+
+    //- social
+    tr
+        td.footer__label
+            p.footer__text Social links:
+    tr
+        td.footer__social
+            table.footer__social__section
+                tr
+                    +social-item(
+                        "http://via.placeholder.com/96",
+                        "Facebook",
+                        "#"
+                    )
+                    +social-item(
+                        "http://via.placeholder.com/96",
+                        "Twitter",
+                        "#"
+                    )
+                    +social-item(
+                        "http://via.placeholder.com/96",
+                        "Instagram",
+                        "#"
+                    )
+                    +social-item(
+                        "http://via.placeholder.com/96",
+                        "Telegram",
+                        "#"
+                    )
+
+    //- links & copy
+    tr
+        td.footer__links
+            table.footer__links__section
+                tr
+                    td.footer__article
+                        p.footer__text <a class="footer__link" href="#" target="_blank">Unsubscribe</a> or <a class="footer__link" href="#" target="_blank">unsubscribe from list</a>
+
+            table.footer__links__section
+                    td.footer__article
+                        a.footer__link(href="#", target="_blank") Feedback
+
+                    td.footer__article
+                        span.footer__text &copy; Copyright

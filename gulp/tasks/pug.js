@@ -11,11 +11,14 @@ var config = require('../config').pug,
 // PostHTML & plugins
 var attr = require('posthtml-extend-attrs'),
     doctype = require('posthtml-doctype'),
+    render = require('posthtml-render'),
     posthtml = require('gulp-posthtml');
 
 gulp.task('pug', ['css'], function () {
     var plugins = [
-        doctype({ doctype : 'HTML 4.01 Transitional' }),
+        doctype({
+            doctype : 'XHTML 1.0 Transitional'
+        }),
         attr({
             attrsTree: {
                 'table': {
@@ -23,20 +26,23 @@ gulp.task('pug', ['css'], function () {
                     cellspacing: '0'
                 }
             }
+        }),
+        render({
+            closingSingleTag: 'slash'
         })
     ];
-    
+
     return gulp.src(config.src)
         .pipe(plumber())
-        .pipe(pug({ pretty: true }))
-        .pipe(posthtml(plugins, {
-            closingSingleTag: 'slash'
+        .pipe(pug({
+            pretty: true
         }))
         .pipe(inline({
             applyStyleTags: false,
             removeStyleTags: false,
             applyWidthAttributes: true
         }))
+        .pipe(posthtml(plugins))
         .pipe(gulp.dest(config.dest))
         .pipe(reload({ stream: true }));
 });

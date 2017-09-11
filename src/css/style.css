@@ -1,26 +1,19 @@
-@import "utils/mixins";
-@import "utils/vars";
+@import "utils/config";
 @import "utils/fonts";
+@import "utils/global";
+@import "utils/page";
 
-/* global */
-IMG {
-	display: block;
-	border: none;
-	}
+@import "blocks/desktop/content";
+@import "blocks/desktop/head";
+@import "blocks/desktop/body";
+@import "blocks/desktop/footer";
 
-/* page */
-#bodyTable {
-	size: 600px, 100%;
-	background: #fff;
-	}
-	#bodyCell {
-		
-		}
-		#templateContainer {
-			width: 600px;
-			border: 1px solid #e7e7e7;
-			}
-
-.mobile_link {
-	color: red;
-	}
+/* inner */
+.inner {
+    &__section {
+        padding: 32px 0;
+        }
+        &__img {
+            width: 100%;
+            }
+    }

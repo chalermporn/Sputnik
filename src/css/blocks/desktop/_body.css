@@ -1,0 +1,40 @@
+@import "title";
+@import "desc";
+@import "sign";
+
+/* wrap */
+.body-wrap {
+    background: #fff;
+    border-radius: 3px;
+    }
+
+/* body */
+.body {
+    &__title,
+    &__desc {
+        text-align: center;
+        }
+        &__title {
+            padding-top: 38px;
+            }
+        &__desc {
+            padding-top: 11px;
+            }
+    &__ctrl {
+        text-align: center;
+
+        &_top {
+            padding-top: 19px;
+            }
+        &_bottom {
+
+            }
+        }
+    &__sign {
+        padding: 25px 0 43px;
+        text-align: center;
+        }
+    &__section {
+
+        }
+    }

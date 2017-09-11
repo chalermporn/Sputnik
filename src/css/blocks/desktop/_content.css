@@ -1,0 +1,6 @@
+/* content */
+.content {
+    width: 100%;
+    max-width: $glob--width;
+    text-align: left;
+    }
